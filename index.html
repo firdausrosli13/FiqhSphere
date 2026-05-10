@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FiqhSphere — Belajar Fiqh Dengan Mudah dan Interaktif</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Amiri:wght@400;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo" data-nav="home">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M12 2c2 3 2 5 0 7-2-2-2-4 0-7z" fill="currentColor"/>
+          <path d="M4 21h16M5 21V11l7-5 7 5v10M9 21v-5a3 3 0 016 0v5"/>
+        </svg>
+      </span>
+      <span class="logo-text">
+        <span class="logo-name">FiqhSphere</span>
+        <span class="logo-tag">Pendidikan Islam</span>
+      </span>
+    </a>
+    <div class="nav-menu" id="navMenu">
+      <a href="#" class="nav-link active" data-nav="home">Laman Utama</a>
+      <a href="#" class="nav-link" data-nav="content">Isi Kandungan</a>
+      <a href="#" class="nav-link" data-nav="quiz">Uji Minda</a>
+      <a href="#" class="nav-link" data-nav="about">Mengenai Kami</a>
+      <a href="#" class="nav-cta" data-go="quiz">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>
+        Mula Belajar
+      </a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ HOME ============ -->
+<section class="view active" id="view-home">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="pattern-stars"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-eyebrow"><span class="dot"></span>Portal Pembelajaran Fiqh USIM</span>
+        <h1>Belajar Fiqh,<br/>Dengan <span class="accent">Mudah</span> &amp; Interaktif.</h1>
+        <p class="hero-tag">FiqhSphere ialah portal pembelajaran digital yang dibina khas untuk pelajar sekolah menengah memahami asas-asas Fiqh — bermula dengan ibadah Solat — secara visual, interaktif, dan mendalam.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" data-go="content">
+            Terokai Modul Solat
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <button class="btn btn-ghost" data-go="quiz">Uji Minda Sekarang</button>
+        </div>
+        <div class="hero-stats">
+          <div><div class="stat-num">4</div><div class="stat-lbl">Modul Fiqh Utama</div></div>
+          <div><div class="stat-num">10+</div><div class="stat-lbl">Sub-Topik Solat</div></div>
+          <div><div class="stat-num">10</div><div class="stat-lbl">Soalan Kuiz</div></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="mosque-card">
+          <div class="crescent"></div>
+          <svg class="mosque-svg" viewBox="0 0 480 280" fill="none">
+            <defs>
+              <linearGradient id="mg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#dcc07a" stop-opacity=".55"/>
+                <stop offset="100%" stop-color="#dcc07a" stop-opacity=".15"/>
+              </linearGradient>
+            </defs>
+            <!-- minarets -->
+            <rect x="40" y="120" width="14" height="160" fill="url(#mg)"/>
+            <path d="M47 120 L34 100 L60 100 Z" fill="#dcc07a" opacity=".7"/>
+            <path d="M47 100 c-6 -8 -6 -14 0 -22 c6 8 6 14 0 22z" fill="#dcc07a" opacity=".85"/>
+            <rect x="426" y="120" width="14" height="160" fill="url(#mg)"/>
+            <path d="M433 120 L420 100 L446 100 Z" fill="#dcc07a" opacity=".7"/>
+            <path d="M433 100 c-6 -8 -6 -14 0 -22 c6 8 6 14 0 22z" fill="#dcc07a" opacity=".85"/>
+            <!-- main dome -->
+            <path d="M170 180 C170 110 310 110 310 180 L310 280 L170 280 Z" fill="url(#mg)"/>
+            <path d="M240 110 c-22 -28 -22 -50 0 -78 c22 28 22 50 0 78z" fill="#dcc07a" opacity=".75"/>
+            <!-- side domes -->
+            <path d="M88 200 C88 160 158 160 158 200 L158 280 L88 280 Z" fill="url(#mg)" opacity=".85"/>
+            <path d="M322 200 C322 160 392 160 392 200 L392 280 L322 280 Z" fill="url(#mg)" opacity=".85"/>
+            <!-- arches -->
+            <path d="M200 220 C200 200 220 200 220 220 L220 280 L200 280 Z" fill="#053d2c" opacity=".4"/>
+            <path d="M260 220 C260 200 280 200 280 220 L280 280 L260 280 Z" fill="#053d2c" opacity=".4"/>
+            <!-- base -->
+            <rect x="60" y="260" width="360" height="20" fill="#dcc07a" opacity=".5"/>
+          </svg>
+        </div>
+        <div class="hero-badge">
+          <div class="b-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div><div class="b-t">Modul Tersusun</div><div class="b-s">Mengikut sukatan KSSM</div></div>
+        </div>
+        <div class="hero-badge bottom">
+          <div class="b-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div><div class="b-t">Kuiz Interaktif</div><div class="b-s">10 soalan + maklum balas</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VERSE -->
+  <div class="section">
+    <div class="section-inner scroll-reveal">
+      <div class="section-eyebrow">Firman Allah</div>
+      <h2 class="section-title">Solat itu adalah satu kewajipan yang ditentukan waktunya.</h2>
+      <div class="verse-card">
+        <div class="verse-grid">
+          <div class="verse-mark">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18" opacity=".4"/><path d="M6 4l-2 2 2 2M18 4l2 2-2 2"/></svg>
+          </div>
+          <div>
+            <div class="verse-arabic">إِنَّ ٱلصَّلَوٰةَ كَانَتْ عَلَى ٱلْمُؤْمِنِينَ كِتَـٰبًا مَّوْقُوتًا</div>
+            <p class="verse-trans">"Sesungguhnya solat itu adalah satu ketetapan yang diwajibkan ke atas orang-orang yang beriman, yang tertentu waktunya."</p>
+            <div class="verse-ref">Surah An-Nisa', 4:103</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="section" style="padding-top:30px">
+    <div class="section-inner scroll-reveal">
+      <div class="section-eyebrow">Pengenalan</div>
+      <h2 class="section-title">Apakah itu Fiqh?</h2>
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p>Fiqh ialah ilmu yang membahaskan hukum-hukum syariah Islam yang berkaitan dengan amalan harian seorang Muslim — dari ibadah, muamalat, hingga akhlak. Ia membimbing kita memahami <em>bagaimana</em> melaksanakan perintah Allah dengan betul dan sempurna.</p>
+          <p>Dalam mata pelajaran Pendidikan Islam, Fiqh menjadi tunjang penting kerana ia menjadikan iman tidak hanya tinggal di hati, tetapi diterjemahkan menerusi perbuatan yang berlandaskan ilmu.</p>
+          <p>FiqhSphere menyusun semula kandungan ini dalam bentuk yang lebih visual, interaktif dan mudah diikuti — supaya pelajar menemui keseronokan dalam menuntut ilmu agama.</p>
+        </div>
+        <div class="intro-pillars">
+          <div class="pillar"><div class="pillar-num">1</div><div><div class="pillar-t">Ibadah</div><div class="pillar-s">Solat, puasa, zakat dan haji</div></div></div>
+          <div class="pillar"><div class="pillar-num">2</div><div><div class="pillar-t">Muamalat</div><div class="pillar-s">Hubungan jual-beli &amp; sosial</div></div></div>
+          <div class="pillar"><div class="pillar-num">3</div><div><div class="pillar-t">Munakahat</div><div class="pillar-s">Hukum kekeluargaan Islam</div></div></div>
+          <div class="pillar"><div class="pillar-num">4</div><div><div class="pillar-t">Jinayat</div><div class="pillar-s">Hukuman &amp; keadilan</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOTIVATION -->
+  <div class="section motiv" id="motivSection">
+    <div class="section-inner scroll-reveal">
+      <div class="section-eyebrow">Mengapa Solat Penting?</div>
+      <h2 class="section-title">Tiang agama yang menyatukan kita dengan Allah.</h2>
+      <p class="section-sub">Solat bukan sekadar gerakan rukun — ia adalah saat seorang hamba berdiri di hadapan Tuhannya lima kali sehari, mencari ketenangan, kekuatan dan keredhaan.</p>
+      <div class="motiv-card">
+        <div class="motiv-grid">
+          <div class="motiv-item">
+            <div class="motiv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v8M4.93 10.93l5.66 5.66M2 18h8M21.07 10.93l-5.66 5.66M22 18h-8"/></svg></div>
+            <div class="motiv-t">Disiplin Diri</div>
+            <div class="motiv-s">Lima waktu sehari membentuk rutin yang teratur, tepat waktu, dan menjauhkan kemalasan.</div>
+          </div>
+          <div class="motiv-item">
+            <div class="motiv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84 8.84-8.84a5.5 5.5 0 000-7.78z"/></svg></div>
+            <div class="motiv-t">Ketenangan Jiwa</div>
+            <div class="motiv-s">Sujud di hadapan Allah meredakan tekanan, kerisauan dan menenangkan hati pelajar.</div>
+          </div>
+          <div class="motiv-item">
+            <div class="motiv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L4 7v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7l-8-5z"/></svg></div>
+            <div class="motiv-t">Pencegah Maksiat</div>
+            <div class="motiv-s">"Sesungguhnya solat mencegah daripada perbuatan keji dan mungkar." — Al-Ankabut 45.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ============ CONTENT ============ -->
+<section class="view" id="view-content">
+  <div class="section topics-bg">
+    <div class="section-inner">
+      <div class="section-eyebrow">Isi Kandungan</div>
+      <h2 class="section-title">Empat tunjang ibadah dalam Fiqh.</h2>
+      <p class="section-sub">Tekan mana-mana kategori untuk meneroka kandungannya. Modul Solat sudah lengkap dengan video, slaid nota, rukun, syarat, hikmah dan kuiz.</p>
+      <div class="topic-grid">
+        <button class="topic active" data-topic="solat">
+          <div class="topic-num">01 / TIANG AGAMA</div>
+          <div class="topic-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21h16M5 21V11l7-5 7 5v10M9 21v-5a3 3 0 016 0v5"/></svg></div>
+          <div class="topic-t">Solat</div>
+          <div class="topic-s">Pelajari rukun, syarat sah, perkara membatalkan, hikmah dan peristiwa diwajibkan solat.</div>
+          <span class="topic-arrow">Mula belajar →</span>
+        </button>
+        <button class="topic" data-topic="zakat">
+          <div class="topic-num">02 / RUKUN ISLAM</div>
+          <div class="topic-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 9h5a2 2 0 010 4h-4a2 2 0 000 4h6"/></svg></div>
+          <div class="topic-t">Zakat</div>
+          <div class="topic-s">Membersih harta, jenis-jenis zakat, syarat wajib dan asnaf yang berhak menerima.</div>
+          <span class="topic-arrow">Akan datang →</span>
+        </button>
+        <button class="topic" data-topic="puasa">
+          <div class="topic-num">03 / RUKUN ISLAM</div>
+          <div class="topic-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></div>
+          <div class="topic-t">Puasa</div>
+          <div class="topic-s">Puasa Ramadan, puasa sunat, perkara membatalkan dan hikmah ibadah puasa.</div>
+          <span class="topic-arrow">Akan datang →</span>
+        </button>
+        <button class="topic" data-topic="haji">
+          <div class="topic-num">04 / RUKUN ISLAM</div>
+          <div class="topic-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="6" width="12" height="12" rx="1"/><path d="M9 9h6v6H9z"/></svg></div>
+          <div class="topic-t">Haji &amp; Umrah</div>
+          <div class="topic-s">Manasik haji, rukun &amp; wajib, miqat, tawaf dan sa'i secara berperingkat.</div>
+          <span class="topic-arrow">Akan datang →</span>
+        </button>
+      </div>
+
+      <!-- SOLAT DEEP DIVE -->
+      <div class="solat-detail" id="solatDetail">
+        <div class="solat-header">
+          <span class="solat-tag">Tiang Agama</span>
+          <h2>Solat</h2>
+          <p>Solat adalah ibadah utama yang menghubungkan hamba dengan Penciptanya. Pelajari setiap aspeknya secara berperingkat dan mendalam.</p>
+        </div>
+        <div class="solat-tabs">
+          <button class="solat-tab active" data-tab="mercu">Mercu Kejayaan</button>
+          <button class="solat-tab" data-tab="objektif">Objektif</button>
+          <button class="solat-tab" data-tab="video">Video Pengajaran</button>
+          <button class="solat-tab" data-tab="slide">Slide Nota</button>
+          <button class="solat-tab" data-tab="rukun">Rukun Solat</button>
+          <button class="solat-tab" data-tab="syarat">Syarat Solat</button>
+          <button class="solat-tab" data-tab="batal">Perkara Membatalkan</button>
+          <button class="solat-tab" data-tab="hikmah">Hikmah &amp; Akibat</button>
+          <button class="solat-tab" data-tab="peristiwa">Peristiwa Solat</button>
+          <button class="solat-tab" data-tab="waktu">Waktu Solat</button>
+        </div>
+        <div class="solat-body">
+
+          <div class="solat-pane active" id="pane-mercu">
+            <div class="mercu-grid">
+              <div class="mercu-card gold">
+                <h3>Solat: Mercu Kejayaan</h3>
+                <p>Solat bukan sekadar ritual. Ia adalah saat di mana seorang hamba berdiri di puncak kerohaniannya — menemui ketenangan, kekuatan dan kejernihan minda yang tidak dapat dibeli dengan apa-apa pun.</p>
+                <div class="mercu-quote">"Apabila telah selesai menunaikan solat, hatinya tenang, fikirannya jernih, dan langkahnya pasti."</div>
+              </div>
+              <div class="mercu-card">
+                <h3>Mengapa "Mercu"?</h3>
+                <p>Solat menjadi penanda paras kerohanian. Pelajar yang menjaga solatnya akan menjaga adab, masanya, dan akhlaknya. Inilah yang dimaksudkan dengan kejayaan dunia dan akhirat.</p>
+                <p style="margin-top:14px;color:var(--gold-700);font-weight:600">Dirikan solat — bina kejayaan.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="solat-pane" id="pane-objektif">
+            <div class="obj-list">
+              <div class="obj-item"><div class="obj-num">1</div><div class="obj-text">Pelajar dapat menyatakan pengertian solat dari sudut bahasa dan istilah dengan tepat.</div></div>
+              <div class="obj-item"><div class="obj-num">2</div><div class="obj-text">Pelajar mampu menyenaraikan 13 rukun solat secara berurutan.</div></div>
+              <div class="obj-item"><div class="obj-num">3</div><div class="obj-text">Pelajar dapat membezakan syarat sah dan syarat wajib solat dengan jelas.</div></div>
+              <div class="obj-item"><div class="obj-num">4</div><div class="obj-text">Pelajar dapat mengenal pasti perkara-perkara yang membatalkan solat.</div></div>
+              <div class="obj-item"><div class="obj-num">5</div><div class="obj-text">Pelajar menghayati hikmah solat dan akibat meninggalkannya dalam kehidupan harian.</div></div>
+              <div class="obj-item"><div class="obj-num">6</div><div class="obj-text">Pelajar memahami peristiwa Israk &amp; Mikraj sebagai latar belakang pensyariatan solat.</div></div>
+            </div>
+          </div>
+
+          <div class="solat-pane" id="pane-video">
+            <div class="video-grid">
+              <div>
+                <div class="video-wrap">
+                  <iframe src="https://www.youtube.com/embed/QGJsjdgkbbg" title="Pengajaran Solat" allowfullscreen></iframe>
+                </div>
+                <div class="video-meta">
+                  <span class="video-tag">YouTube · Pengajaran</span>
+                  <div class="vt">Pengertian &amp; Kepentingan Solat</div>
+                  <div class="vs">Video pengajaran asas tentang solat untuk pelajar menengah.</div>
+                </div>
+              </div>
+              <div>
+                <div class="video-wrap">
+                  <iframe src="https://www.youtube.com/embed/8GE0Sq3GgRQ" title="Animasi Solat" allowfullscreen></iframe>
+                </div>
+                <div class="video-meta">
+                  <span class="video-tag gold">Animasi</span>
+                  <div class="vt">Cara Solat Yang Betul (Animasi)</div>
+                  <div class="vs">Animasi panduan solat lengkap untuk pemula dan ulang kaji.</div>
+                </div>
+              </div>
+              <div>
+                <div class="video-wrap">
+                  <iframe src="https://www.youtube.com/embed/kUTmcVYpOKw" title="Plotagon" allowfullscreen></iframe>
+                </div>
+                <div class="video-meta">
+                  <span class="video-tag gold">Plotagon · Cerita</span>
+                  <div class="vt">Kisah Si Pelajar yang Lalai Solat</div>
+                  <div class="vs">Penceritaan animasi Plotagon mengenai pengajaran disiplin solat.</div>
+                </div>
+              </div>
+              <div>
+                <div class="video-wrap">
+                  <iframe src="https://www.youtube.com/embed/Y0t6yIyU8e0" title="Hikmah Solat" allowfullscreen></iframe>
+                </div>
+                <div class="video-meta">
+                  <span class="video-tag">YouTube · Tazkirah</span>
+                  <div class="vt">Hikmah di Sebalik Setiap Rakaat</div>
+                  <div class="vs">Renungan ringkas tentang hikmah pergerakan dalam solat.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="solat-pane" id="pane-slide">
+            <div class="slide-deck">
+              <div class="slide-preview">
+                <div class="slide-preview-content">
+                  <div class="sp-num">FIQHSPHERE · NOTA 01</div>
+                  <div class="sp-t">Solat: Asas &amp; Hukum</div>
+                  <div class="sp-s">Pengertian, dalil, dan kedudukannya dalam Islam</div>
+                </div>
+              </div>
+              <div>
+                <h3 style="font-family:var(--font-display);font-size:30px;color:var(--emerald-900);font-weight:600;margin-bottom:10px">Slide Nota Pembelajaran</h3>
+                <p style="color:var(--ink-soft);font-size:15px;line-height:1.6;margin-bottom:20px">Akses slaid persembahan lengkap mengenai topik Solat — direka khas mengikut sukatan Pendidikan Islam KSSM. Setiap slaid disertakan visual, ringkasan dan latihan pengukuhan.</p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                  <button class="btn btn-primary">Buka Slide Nota →</button>
+                  <button class="btn btn-ghost">Muat Turun PDF</button>
+                </div>
+                <div style="margin-top:24px;display:flex;gap:14px;flex-wrap:wrap;color:var(--ink-mute);font-size:13px">
+                  <span>📑 24 slaid</span>
+                  <span>· 🎯 Aras Tingkatan 4</span>
+                  <span>· ⏱ ±25 minit</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="solat-pane" id="pane-rukun">
+            <p style="color:var(--ink-soft);margin-bottom:20px;max-width:680px">Rukun solat ialah perkara yang wajib dilakukan dan menjadi tunjang sahnya solat. Tekan setiap rukun untuk penjelasan lanjut.</p>
+            <div class="rukun-list">
+              
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">01</span>
+                    <span class="rukun-t">Niat</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Berniat di dalam hati pada permulaan solat untuk mengerjakan solat tertentu.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">02</span>
+                    <span class="rukun-t">Berdiri Betul</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Bagi yang mampu, berdiri tegak menghadap kiblat ketika solat fardhu.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">03</span>
+                    <span class="rukun-t">Takbiratul Ihram</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Mengangkat tangan sambil melafazkan "Allahu Akbar" sebagai pembuka solat.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">04</span>
+                    <span class="rukun-t">Membaca Al-Fatihah</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Membaca surah Al-Fatihah pada setiap rakaat dengan tertib dan jelas.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">05</span>
+                    <span class="rukun-t">Rukuk dengan Tomakninah</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Membongkok hingga punggung lurus dan berhenti seketika.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">06</span>
+                    <span class="rukun-t">Iktidal dengan Tomakninah</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Bangkit dari rukuk, berdiri tegak dan berhenti seketika.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">07</span>
+                    <span class="rukun-t">Sujud Dua Kali dengan Tomakninah</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Meletakkan dahi, hidung, kedua tapak tangan, lutut dan jari kaki ke lantai.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">08</span>
+                    <span class="rukun-t">Duduk Antara Dua Sujud</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Duduk seketika dengan tomakninah antara dua sujud.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">09</span>
+                    <span class="rukun-t">Duduk Tahiyat Akhir</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Duduk pada akhir solat untuk membaca tasyahhud.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">10</span>
+                    <span class="rukun-t">Membaca Tasyahhud Akhir</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Lafaz syahadah dan doa pada duduk tahiyat akhir.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">11</span>
+                    <span class="rukun-t">Selawat ke atas Nabi SAW</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Membaca selawat selepas tasyahhud akhir.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">12</span>
+                    <span class="rukun-t">Memberi Salam</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Memberi salam ke kanan (dan kiri) sebagai penutup solat.</p></div>
+                </div>
+                <div class="rukun">
+                  <button class="rukun-h">
+                    <span class="rukun-n">13</span>
+                    <span class="rukun-t">Tertib</span>
+                    <svg class="rukun-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </button>
+                  <div class="rukun-b"><p>Melakukan setiap rukun mengikut urutan yang betul.</p></div>
+                </div>
+            </div>
+          </div>
+
+          <div class="solat-pane" id="pane-syarat">
+            <div class="two-col">
+              <div class="list-card good">
+                <h3>Syarat Sah Solat</h3>
+                <div class="lc-sub">Syarat yang mesti dipenuhi supaya solat dianggap sah</div>
+                <ul>
+                  <li>Suci dari hadas kecil dan besar</li>
+                  <li>Suci pakaian, badan dan tempat solat</li>
+                  <li>Menutup aurat dengan sempurna</li>
+                  <li>Menghadap kiblat (kecuali yang diharuskan)</li>
+                  <li>Mengetahui telah masuk waktu solat</li>
+                  <li>Mengetahui kewajipan solat fardhu</li>
+                </ul>
+              </div>
+              <div class="list-card good">
+                <h3>Syarat Wajib Solat</h3>
+                <div class="lc-sub">Syarat yang mewajibkan seseorang menunaikan solat</div>
+                <ul>
+                  <li>Beragama Islam</li>
+                  <li>Baligh (cukup umur)</li>
+                  <li>Berakal sempurna</li>
+                  <li>Suci dari haid dan nifas (bagi wanita)</li>
+                  <li>Sampai dakwah Islam</li>
+                  <li>Berkemampuan dari segi fizikal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="solat-pane" id="pane-batal">
+            <div class="list-card warn">
+              <h3>Perkara yang Membatalkan Solat</h3>
+              <div class="lc-sub">Sekiranya berlaku, solat hendaklah diulangi semula</div>
+              <ul>
+                <li>Berhadas kecil atau besar ketika dalam solat</li>
+                <li>Terkena najis pada badan, pakaian atau tempat solat</li>
+                <li>Terbuka aurat dengan sengaja</li>
+                <li>Berkata-kata dengan sengaja walaupun satu huruf bermakna</li>
+                <li>Makan atau minum dengan sengaja</li>
+                <li>Banyak bergerak (lebih tiga kali berturut-turut) bukan kerana solat</li>
+                <li>Berniat keluar dari solat (memutuskan niat)</li>
+                <li>Membelakangi kiblat tanpa keuzuran</li>
+                <li>Ketawa berdekah-dekah</li>
+                <li>Murtad — keluar daripada agama Islam</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="solat-pane" id="pane-hikmah">
+            <div class="two-col">
+              <div class="list-card good">
+                <h3>Hikmah Solat</h3>
+                <div class="lc-sub">Manfaat solat dalam kehidupan seorang Muslim</div>
+                <ul>
+                  <li>Mendekatkan diri kepada Allah SWT</li>
+                  <li>Mencegah perbuatan keji dan mungkar</li>
+                  <li>Mendisiplinkan diri dengan masa yang tetap</li>
+                  <li>Menenangkan jiwa dan menghilangkan tekanan</li>
+                  <li>Menjadi cahaya pada hari kiamat</li>
+                  <li>Menyatukan ummah dalam saf yang sama</li>
+                  <li>Mendidik kebersihan rohani dan jasmani</li>
+                </ul>
+              </div>
+              <div class="list-card warn">
+                <h3>Akibat Meninggalkan Solat</h3>
+                <div class="lc-sub">Kesan buruk bagi yang meninggalkannya tanpa keuzuran</div>
+                <ul>
+                  <li>Berdosa besar di sisi Allah SWT</li>
+                  <li>Hilang ketenangan dan keberkatan dalam hidup</li>
+                  <li>Mudah terjebak dengan perbuatan maksiat</li>
+                  <li>Lemah hubungan dengan Pencipta</li>
+                  <li>Diancam dengan azab yang pedih di akhirat</li>
+                  <li>Hilang pertolongan Allah dalam kesusahan</li>
+                  <li>Menjadi golongan yang rugi di dunia dan akhirat</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="solat-pane" id="pane-peristiwa">
+            <h3 style="font-family:var(--font-display);font-size:28px;color:var(--emerald-900);font-weight:600;margin-bottom:6px">Peristiwa Pensyariatan Solat</h3>
+            <p style="color:var(--ink-soft);max-width:680px">Berbeza dengan kebanyakan ibadah, perintah solat 5 waktu diturunkan secara terus dari Allah kepada Nabi Muhammad SAW pada peristiwa Israk dan Mikraj.</p>
+            <div class="timeline">
+              <div class="tl-item"><div class="tl-year">TAHUN KE-10 KENABIAN</div><div class="tl-t">Tahun Kesedihan</div><div class="tl-d">Wafatnya Sayidatina Khadijah dan bapa saudara Abu Talib. Nabi SAW menerima ujian besar dalam dakwahnya di Mekah.</div></div>
+              <div class="tl-item"><div class="tl-year">27 REJAB</div><div class="tl-t">Israk — Perjalanan Malam</div><div class="tl-d">Nabi SAW dijalankan dari Masjidil Haram di Mekah ke Masjidil Aqsa di Baitul Maqdis dengan menaiki Buraq.</div></div>
+              <div class="tl-item"><div class="tl-year">MALAM YANG SAMA</div><div class="tl-t">Mikraj — Naik ke Sidratul Muntaha</div><div class="tl-d">Nabi SAW dinaikkan ke langit ke tujuh, bertemu para Nabi terdahulu, dan menerima perintah solat secara langsung.</div></div>
+              <div class="tl-item"><div class="tl-year">PEMBERIAN PERINTAH</div><div class="tl-t">Solat 5 Waktu Diwajibkan</div><div class="tl-d">Asalnya 50 waktu sehari, dikurangkan kepada 5 waktu setelah cadangan Nabi Musa AS — dengan ganjaran 50 kali lipat.</div></div>
+            </div>
+          </div>
+
+          <div class="solat-pane" id="pane-waktu">
+            <h3 style="font-family:var(--font-display);font-size:28px;color:var(--emerald-900);font-weight:600;margin-bottom:6px">Pengingat Waktu Solat</h3>
+            <p style="color:var(--ink-soft);max-width:680px">Lima waktu solat fardhu yang diwajibkan setiap hari. Waktu semasa akan ditandakan secara automatik berdasarkan jam tempatan anda.</p>
+            <div class="waktu-grid">
+              <div class="waktu" data-waktu="subuh">
+                <svg class="w-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v2M5.6 5.6l1.4 1.4M3 12h2M19 12h2M17 7l1.4-1.4M3 18h18M8 18a4 4 0 018 0"/></svg>
+                <div class="w-name">Subuh</div>
+                <div class="w-time">5:45 — 7:10 AM</div>
+                <div class="w-rakaat">2 Rakaat</div>
+              </div>
+              <div class="waktu" data-waktu="zohor">
+                <svg class="w-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6L19 19M5 19l1.4-1.4M17.6 6.4L19 5"/></svg>
+                <div class="w-name">Zohor</div>
+                <div class="w-time">1:15 — 4:25 PM</div>
+                <div class="w-rakaat">4 Rakaat</div>
+              </div>
+              <div class="waktu" data-waktu="asar">
+                <svg class="w-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="14" r="4"/><path d="M12 4v2M4 14h2M20 14h2M6 8l1.4 1.4M16.6 9.4L18 8"/></svg>
+                <div class="w-name">Asar</div>
+                <div class="w-time">4:25 — 7:15 PM</div>
+                <div class="w-rakaat">4 Rakaat</div>
+              </div>
+              <div class="waktu" data-waktu="maghrib">
+                <svg class="w-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 18h18M8 18a4 4 0 018 0M12 13v-3M12 8L9 11M12 8l3 3"/></svg>
+                <div class="w-name">Maghrib</div>
+                <div class="w-time">7:15 — 8:25 PM</div>
+                <div class="w-rakaat">3 Rakaat</div>
+              </div>
+              <div class="waktu" data-waktu="isyak">
+                <svg class="w-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                <div class="w-name">Isyak</div>
+                <div class="w-time">8:25 PM — 5:45 AM</div>
+                <div class="w-rakaat">4 Rakaat</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="view" id="view-quiz">
+  <div class="section quiz-bg">
+    <div class="section-inner">
+      <div class="section-eyebrow">Uji Minda</div>
+      <h2 class="section-title">Pilih topik dan mulakan kuiz.</h2>
+      <p class="section-sub">Pilih topik di bawah untuk menguji ilmu anda. Buat masa ini, topik Solat telah siap sepenuhnya dengan 10 soalan interaktif dan maklum balas serta-merta.</p>
+
+      <!-- TOPIC PICKER -->
+      <div class="quiz-topic-picker">
+        <button class="qtp-card active" id="qtpSolat">
+          <div class="qtp-num">01 / TIANG AGAMA</div>
+          <div class="qtp-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21h16M5 21V11l7-5 7 5v10M9 21v-5a3 3 0 016 0v5"/></svg>
+          </div>
+          <div class="qtp-name">Solat</div>
+          <div class="qtp-meta">10 Soalan · ~5 Minit</div>
+          <span class="qtp-badge qtp-avail">Mula Sekarang →</span>
+        </button>
+        <div class="qtp-card qtp-locked">
+          <div class="qtp-lock-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+          <div class="qtp-num">02 / RUKUN ISLAM</div>
+          <div class="qtp-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 9h5a2 2 0 010 4h-4a2 2 0 000 4h6"/></svg>
+          </div>
+          <div class="qtp-name">Zakat</div>
+          <div class="qtp-meta">Akan Datang</div>
+          <span class="qtp-badge qtp-soon">Akan Datang</span>
+        </div>
+        <div class="qtp-card qtp-locked">
+          <div class="qtp-lock-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+          <div class="qtp-num">03 / RUKUN ISLAM</div>
+          <div class="qtp-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          </div>
+          <div class="qtp-name">Puasa</div>
+          <div class="qtp-meta">Akan Datang</div>
+          <span class="qtp-badge qtp-soon">Akan Datang</span>
+        </div>
+        <div class="qtp-card qtp-locked">
+          <div class="qtp-lock-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+          <div class="qtp-num">04 / RUKUN ISLAM</div>
+          <div class="qtp-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="6" width="12" height="12" rx="1"/><path d="M9 9h6v6H9z"/></svg>
+          </div>
+          <div class="qtp-name">Haji &amp; Umrah</div>
+          <div class="qtp-meta">Akan Datang</div>
+          <span class="qtp-badge qtp-soon">Akan Datang</span>
+        </div>
+      </div>
+
+      <div class="quiz-hero">
+        <div>
+          <h2>10 Soalan,<br/>Tak Sampai 5 Minit.</h2>
+          <p>Setiap soalan disertakan maklum balas serta-merta supaya anda belajar dari setiap kesilapan. Skor akhir akan ditampilkan dengan motivasi peribadi.</p>
+          <div class="quiz-hero-stats">
+            <div class="qhs"><span class="n">10</span><span class="l">Soalan Solat</span></div>
+            <div class="qhs"><span class="n">~5</span><span class="l">Minit Sahaja</span></div>
+            <div class="qhs"><span class="n">100%</span><span class="l">Maklum Balas</span></div>
+          </div>
+          <div class="quiz-topics">
+            <span class="qt-chip">Rukun</span>
+            <span class="qt-chip">Syarat</span>
+            <span class="qt-chip">Hikmah</span>
+            <span class="qt-chip">Peristiwa</span>
+            <span class="qt-chip">Akibat</span>
+          </div>
+        </div>
+        <div class="quiz-hero-actions">
+          <button class="quiz-platform" data-url="https://kahoot.com">
+            <div class="qp-ic kahoot">K!</div>
+            <div><div class="qp-t">Play Kahoot</div><div class="qp-s">Main bersama kelas anda</div></div>
+            <span class="qp-arrow">→</span>
+          </button>
+          <button class="quiz-platform" data-url="https://quizizz.com">
+            <div class="qp-ic quizizz">Q</div>
+            <div><div class="qp-t">Answer Quizizz</div><div class="qp-s">Jawab pada kadar sendiri</div></div>
+            <span class="qp-arrow">→</span>
+          </button>
+          <button class="btn btn-gold" onclick="document.getElementById('quizPanel').scrollIntoView({behavior:'smooth'})">Start Quiz Dalam Laman →</button>
+        </div>
+      </div>
+
+      <!-- INLINE QUIZ -->
+      <div class="quiz-panel" id="quizPanel">
+        <div class="quiz-progress-bar">
+          <div class="qp-info">
+            <span class="qp-q" id="qNum">Soalan 01 / 10</span>
+            <span class="qp-t2" id="qTitle">Topik Solat</span>
+          </div>
+          <div class="qp-track"><div class="qp-fill" id="qProgress"></div></div>
+          <div class="qp-score" id="qScore">Skor: <span class="gold">0</span> / 10</div>
+        </div>
+        <div class="quiz-stage" id="quizStage">
+          <div class="q-num">PENDIDIKAN ISLAM · TINGKATAN 4</div>
+          <div class="q-text" id="qText">—</div>
+          <div class="q-options" id="qOpts"></div>
+          <div class="q-feedback" id="qFeedback"></div>
+          <div class="q-actions">
+            <button class="btn btn-primary" id="qNext" style="display:none">Soalan Seterusnya →</button>
+          </div>
+        </div>
+        <div class="quiz-result" id="quizResult">
+          <div class="qr-medal">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M8 14l-2 8 6-3 6 3-2-8"/></svg>
+          </div>
+          <div class="qr-score"><span id="qrScoreNum">0</span><span class="of" id="qrScoreOf">/10</span></div>
+          <div class="qr-msg" id="qrMsg">—</div>
+          <div class="qr-actions">
+            <button class="btn btn-primary" id="qrRetry">Cuba Sekali Lagi ↻</button>
+            <button class="btn btn-ghost" data-go="content">Ulang Kaji Modul</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="view" id="view-about">
+  <div class="section about-bg">
+    <div class="section-inner">
+      <div class="section-eyebrow">Mengenai Kami</div>
+      <h2 class="section-title">Pasukan kecil di sebalik FiqhSphere.</h2>
+      <p class="section-sub">FiqhSphere adalah projek tugasan kursus teknologi pendidikan oleh sekumpulan pelajar Universiti Sains Islam Malaysia (USIM). Kami percaya pendidikan agama yang baik bermula dengan bahan ajar yang menarik.</p>
+
+      <div class="about-hero">
+        <div class="usim-card">
+          <span class="usim-tag">USIM · Identiti Kami</span>
+          <h3>Universiti Sains Islam Malaysia</h3>
+          <p>Sebuah universiti awam yang menggabungkan pendekatan sains moden dengan ilmu-ilmu Islam tradisional. Kami berusaha menterjemah falsafah ini melalui karya digital pendidikan.</p>
+          <div class="usim-meta">
+            <div class="usim-meta-item"><div class="ml">Kursus</div><div class="mv">Teknologi Dan Inovasi Bahan Pengajaran Dalam Pendidikan</div></div>
+            <div class="usim-meta-item"><div class="ml">Kod Kursus</div><div class="mv">EAT3133</div></div>
+            <div class="usim-meta-item"><div class="ml">Semester</div><div class="mv">Sem 2, 2025/2026</div></div>
+            <div class="usim-meta-item"><div class="ml">Pensyarah</div><div class="mv">Prof.Madya Dr. Hazlina Binti Abdullah</div></div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-family:var(--font-display);font-size:32px;color:var(--emerald-900);font-weight:600;line-height:1.15;margin-bottom:14px">Misi kami</h3>
+          <p style="color:var(--ink-soft);font-size:16px;line-height:1.65;margin-bottom:14px">Membina sumber pembelajaran Fiqh yang <em>moden, ringkas dan menyenangkan</em> untuk pelajar sekolah menengah di Malaysia.</p>
+          <p style="color:var(--ink-soft);font-size:16px;line-height:1.65">Kami percaya bahawa apabila ibadah difahami dengan baik, ia akan dilakukan dengan cinta — bukan sekadar rutin.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:64px">
+        <div class="section-eyebrow">Ahli Kumpulan</div>
+        <h3 style="font-family:var(--font-display);font-size:36px;color:var(--emerald-900);font-weight:600;margin-bottom:8px">Lima pelajar, satu visi.</h3>
+        <p style="color:var(--ink-soft);max-width:600px">Setiap ahli memegang peranan tersendiri dalam pembinaan FiqhSphere — dari penyelidikan kandungan hinggalah pembangunan antara muka.</p>
+        <div class="team-grid">
+          <div class="member">
+            <div class="member-avatar">NA</div>
+            <div class="member-name">Sufy Balqis Humaira binti Mohd Zafany</div>
+            <div class="member-matric">4221234</div>
+            <div class="member-role">Ketua Projek</div>
+          </div>
+          <div class="member">
+            <div class="member-avatar">MH</div>
+            <div class="member-name">Muhammad Haziq bin Razali</div>
+            <div class="member-matric">4221256</div>
+            <div class="member-role">Pereka UI/UX</div>
+          </div>
+          <div class="member">
+            <div class="member-avatar">SF</div>
+            <div class="member-name">Siti Fatimah binti Yusof</div>
+            <div class="member-matric">4221289</div>
+            <div class="member-role">Penyelidik Kandungan</div>
+          </div>
+          <div class="member">
+            <div class="member-avatar">AI</div>
+            <div class="member-name">Ahmad Iskandar bin Hassan</div>
+            <div class="member-matric">4221302</div>
+            <div class="member-role">Pembangun Sistem</div>
+          </div>
+          <div class="member">
+            <div class="member-avatar">NS</div>
+            <div class="member-name">Nur Sofea binti Kamal</div>
+            <div class="member-matric">4221325</div>
+            <div class="member-role">Penyunting Media</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M12 2c2 3 2 5 0 7-2-2-2-4 0-7z" fill="currentColor"/>
+            <path d="M4 21h16M5 21V11l7-5 7 5v10M9 21v-5a3 3 0 016 0v5"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-name">FiqhSphere</span>
+          <span class="logo-tag">Pendidikan Islam · USIM</span>
+        </span>
+      </div>
+      <p>Portal pembelajaran Fiqh interaktif untuk pelajar sekolah menengah. Dibina dengan cinta di Bandar Baru Nilai.</p>
+    </div>
+    <div>
+      <div class="footer-h">Modul</div>
+      <ul class="footer-list">
+        <li><a href="#" data-go="content">Solat</a></li>
+        <li><a href="#" data-go="content">Zakat</a></li>
+        <li><a href="#" data-go="content">Puasa</a></li>
+        <li><a href="#" data-go="content">Haji &amp; Umrah</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-h">Pelajar</div>
+      <ul class="footer-list">
+        <li><a href="#" data-go="quiz">Uji Minda</a></li>
+        <li><a href="#" data-go="content">Slide Nota</a></li>
+        <li><a href="#" data-go="content">Video Pengajaran</a></li>
+        <li><a href="#" data-go="about">Pasukan Kami</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-h">USIM</div>
+      <ul class="footer-list">
+        <li><a href="https://www.usim.edu.my" target="_blank">Laman Web USIM</a></li>
+        <li><a href="#">Fakulti Pengajian Islam</a></li>
+        <li><a href="#">Pusat Sumber Digital</a></li>
+        <li><a href="#" data-go="about">Hubungi Kami</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 FiqhSphere — Tugasan Teknologi Pendidikan, USIM.</div>
+    <div>Dibina dengan HTML, CSS &amp; JavaScript · بسم الله الرحمن الرحيم</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
