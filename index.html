@@ -197,27 +197,27 @@
           <div class="topic-s">Pelajari rukun, syarat sah, perkara membatalkan, hikmah dan peristiwa diwajibkan solat.</div>
           <span class="topic-arrow">Mula belajar →</span>
         </button>
-        <button class="topic" data-topic="zakat">
+        <div class="topic topic-locked" data-topic="zakat">
+          <div class="topic-lock-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
           <div class="topic-num">02 / RUKUN ISLAM</div>
           <div class="topic-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 9h5a2 2 0 010 4h-4a2 2 0 000 4h6"/></svg></div>
           <div class="topic-t">Zakat</div>
-          <div class="topic-s">Membersih harta, jenis-jenis zakat, syarat wajib dan asnaf yang berhak menerima.</div>
-          <span class="topic-arrow">Akan datang →</span>
-        </button>
-        <button class="topic" data-topic="puasa">
+          <span class="topic-arrow">Akan Datang</span>
+        </div>
+        <div class="topic topic-locked" data-topic="puasa">
+          <div class="topic-lock-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
           <div class="topic-num">03 / RUKUN ISLAM</div>
           <div class="topic-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></div>
           <div class="topic-t">Puasa</div>
-          <div class="topic-s">Puasa Ramadan, puasa sunat, perkara membatalkan dan hikmah ibadah puasa.</div>
-          <span class="topic-arrow">Akan datang →</span>
-        </button>
-        <button class="topic" data-topic="haji">
+          <span class="topic-arrow">Akan Datang</span>
+        </div>
+        <div class="topic topic-locked" data-topic="haji">
+          <div class="topic-lock-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
           <div class="topic-num">04 / RUKUN ISLAM</div>
           <div class="topic-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="6" width="12" height="12" rx="1"/><path d="M9 9h6v6H9z"/></svg></div>
           <div class="topic-t">Haji &amp; Umrah</div>
-          <div class="topic-s">Manasik haji, rukun &amp; wajib, miqat, tawaf dan sa'i secara berperingkat.</div>
-          <span class="topic-arrow">Akan datang →</span>
-        </button>
+          <span class="topic-arrow">Akan Datang</span>
+        </div>
       </div>
 
       <!-- SOLAT DEEP DIVE -->
@@ -238,6 +238,7 @@
           <button class="solat-tab" data-tab="hikmah">Hikmah &amp; Akibat</button>
           <button class="solat-tab" data-tab="peristiwa">Peristiwa Solat</button>
           <button class="solat-tab" data-tab="waktu">Waktu Solat</button>
+          <button class="solat-tab" data-tab="tambahan">Info Tambahan</button>
         </div>
         <div class="solat-body">
 
@@ -575,6 +576,50 @@
             </div>
           </div>
 
+          <div class="solat-pane" id="pane-tambahan">
+            <h3 style="font-family:var(--font-display);font-size:28px;color:var(--emerald-900);font-weight:600;margin-bottom:6px">Info Tambahan</h3>
+            <p style="color:var(--ink-soft);max-width:680px;margin-bottom:36px">Maklumat tambahan berkaitan solat yang perlu diketahui oleh setiap pelajar sebagai pelengkap kepada modul utama.</p>
+            <div class="tambahan-grid">
+
+              <div class="tambahan-card">
+                <div class="tambahan-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L4 7v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7l-8-5z"/></svg></div>
+                <h4>Solat Jamak</h4>
+                <p>Menghimpunkan dua solat fardhu dalam satu waktu. Diharuskan ketika musafir (perjalanan jauh), hujan lebat, atau sakit. Terdapat dua jenis: <strong>Jamak Taqdim</strong> (solat Asar dikerjakan pada waktu Zohor) dan <strong>Jamak Takhir</strong> (solat Zohor dikerjakan pada waktu Asar).</p>
+              </div>
+
+              <div class="tambahan-card">
+                <div class="tambahan-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                <h4>Solat Qasar</h4>
+                <p>Memendekkan solat fardhu empat rakaat kepada dua rakaat. Diharuskan bagi musafir yang melebihi jarak <strong>2 marhalah (±89 km)</strong> dan berniat untuk bermusafir. Boleh digabungkan dengan jamak (jamak qasar).</p>
+              </div>
+
+              <div class="tambahan-card">
+                <div class="tambahan-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+                <h4>Solat Berjemaah</h4>
+                <p>Solat yang dilakukan secara bersama-sama dengan sekurang-kurangnya dua orang — seorang imam dan seorang makmum. Ganjaran solat berjemaah adalah <strong>27 darjat</strong> lebih berbanding solat bersendirian. Hukumnya sunat muakkad.</p>
+              </div>
+
+              <div class="tambahan-card">
+                <div class="tambahan-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v8M4.93 10.93l5.66 5.66M2 18h8M21.07 10.93l-5.66 5.66M22 18h-8"/></svg></div>
+                <h4>Solat Sunat Rawatib</h4>
+                <p>Solat sunat yang mengiringi solat fardhu. Terbahagi kepada <strong>sunat muakkad</strong> (sangat dituntut) dan <strong>sunat ghairu muakkad</strong>. Contoh: 2 rakaat sebelum Subuh, 4 rakaat sebelum Zohor, dan 2 rakaat selepas Maghrib.</p>
+              </div>
+
+              <div class="tambahan-card">
+                <div class="tambahan-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+                <h4>Qada' Solat</h4>
+                <p>Menggantikan solat yang tertinggal tanpa uzur syarie adalah <strong>wajib</strong>. Solat yang ditinggalkan kerana uzur (tidur atau terlupa) hendaklah diqada' apabila sedar atau teringat. Qada' dilakukan mengikut bilangan rakaat asal tanpa jamak atau qasar.</p>
+              </div>
+
+              <div class="tambahan-card">
+                <div class="tambahan-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l8.84 8.84 8.84-8.84a5.5 5.5 0 000-7.78z"/></svg></div>
+                <h4>Solat Khusyuk</h4>
+                <p>Solat yang khusyuk bermaksud hadir hati dan fikiran sepenuhnya kepada Allah. Ini dicapai melalui: memahami makna bacaan, mengelak gangguan, berwudhu dengan sempurna, dan menghayati setiap gerakan. Solat khusyuk adalah <strong>roh kepada solat</strong> itu sendiri.</p>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -815,7 +860,6 @@
   </div>
   <div class="footer-bottom">
     <div>© 2026 FiqhSphere — Tugasan Teknologi Pendidikan, USIM.</div>
-    <div>Dibina dengan HTML, CSS &amp; JavaScript · بسم الله الرحمن الرحيم</div>
   </div>
 </footer>
 

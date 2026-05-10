@@ -36,6 +36,7 @@
 
   /* ===== Topic cards trigger Solat detail ===== */
   document.querySelectorAll('.topic').forEach(t => t.addEventListener('click', () => {
+    if(t.classList.contains('topic-locked')) return;
     const id = t.dataset.topic;
     document.querySelectorAll('.topic').forEach(x => x.classList.remove('active'));
     t.classList.add('active');
