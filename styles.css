@@ -550,8 +550,32 @@ main{min-height:80vh}
   transition:max-height .3s ease, padding .3s ease;
   padding:0 24px;
 }
-.rukun.open .rukun-b{max-height:300px;padding:0 24px 22px 72px}
+.rukun.open .rukun-b{max-height:1000px;padding:0 24px 22px 72px}
 .rukun-b p{font-size:14.5px;color:var(--ink-soft);line-height:1.6}
+.rukun-bacaan{
+  margin-top:14px;padding:16px 20px;
+  background:linear-gradient(135deg,var(--emerald-50),var(--cream));
+  border-radius:var(--radius-sm);
+  border-left:3px solid var(--emerald-600);
+}
+.rb-tag{
+  display:inline-block;
+  font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--emerald-700);margin-bottom:12px;
+}
+.rb-ar{
+  font-family:var(--font-arabic);font-size:22px;line-height:2;
+  text-align:right;direction:rtl;
+  color:var(--emerald-900);margin-bottom:10px;
+}
+.rb-rm{font-size:13px;color:var(--ink-soft);font-style:italic;margin-bottom:6px;line-height:1.6}
+.rb-tr{font-size:13px;color:var(--ink-mute);line-height:1.6}
+.rb-note{
+  display:inline-block;margin-top:10px;
+  padding:3px 10px;border-radius:999px;
+  background:rgba(10,91,64,.08);
+  font-size:11px;color:var(--emerald-800);font-weight:600;letter-spacing:.03em;
+}
 
 /* Two-column lists (syarat, batal, hikmah, akibat) */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}
