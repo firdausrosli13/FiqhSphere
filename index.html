@@ -230,13 +230,13 @@
         <div class="solat-tabs">
           <button class="solat-tab active" data-tab="mercu">Mercu Kejayaan</button>
           <button class="solat-tab" data-tab="objektif">Objektif</button>
+          <button class="solat-tab" data-tab="peristiwa">Peristiwa Solat</button>
           <button class="solat-tab" data-tab="video">Video Pengajaran</button>
           <button class="solat-tab" data-tab="slide">Slide Nota</button>
           <button class="solat-tab" data-tab="rukun">Rukun Solat</button>
           <button class="solat-tab" data-tab="syarat">Syarat Solat</button>
           <button class="solat-tab" data-tab="batal">Perkara Membatalkan</button>
           <button class="solat-tab" data-tab="hikmah">Hikmah &amp; Akibat</button>
-          <button class="solat-tab" data-tab="peristiwa">Peristiwa Solat</button>
           <button class="solat-tab" data-tab="waktu">Waktu Solat</button>
           <button class="solat-tab" data-tab="tambahan">Info Tambahan</button>
         </div>
@@ -265,6 +265,17 @@
               <div class="obj-item"><div class="obj-num">4</div><div class="obj-text">Pelajar dapat mengenal pasti perkara-perkara yang membatalkan solat.</div></div>
               <div class="obj-item"><div class="obj-num">5</div><div class="obj-text">Pelajar menghayati hikmah solat dan akibat meninggalkannya dalam kehidupan harian.</div></div>
               <div class="obj-item"><div class="obj-num">6</div><div class="obj-text">Pelajar memahami peristiwa Israk &amp; Mikraj sebagai latar belakang pensyariatan solat.</div></div>
+            </div>
+          </div>
+
+          <div class="solat-pane" id="pane-peristiwa">
+            <h3 style="font-family:var(--font-display);font-size:28px;color:var(--emerald-900);font-weight:600;margin-bottom:6px">Peristiwa Pensyariatan Solat</h3>
+            <p style="color:var(--ink-soft);max-width:680px">Berbeza dengan kebanyakan ibadah, perintah solat 5 waktu diturunkan secara terus dari Allah kepada Nabi Muhammad SAW pada peristiwa Israk dan Mikraj.</p>
+            <div class="timeline">
+              <div class="tl-item"><div class="tl-year">TAHUN KE-10 KENABIAN</div><div class="tl-t">Tahun Kesedihan</div><div class="tl-d">Wafatnya Sayidatina Khadijah dan bapa saudara Abu Talib. Nabi SAW menerima ujian besar dalam dakwahnya di Mekah.</div></div>
+              <div class="tl-item"><div class="tl-year">27 REJAB</div><div class="tl-t">Israk — Perjalanan Malam</div><div class="tl-d">Nabi SAW dijalankan dari Masjidil Haram di Mekah ke Masjidil Aqsa di Baitul Maqdis dengan menaiki Buraq.</div></div>
+              <div class="tl-item"><div class="tl-year">MALAM YANG SAMA</div><div class="tl-t">Mikraj — Naik ke Sidratul Muntaha</div><div class="tl-d">Nabi SAW dinaikkan ke langit ke tujuh, bertemu para Nabi terdahulu, dan menerima perintah solat secara langsung.</div></div>
+              <div class="tl-item"><div class="tl-year">PEMBERIAN PERINTAH</div><div class="tl-t">Solat 5 Waktu Diwajibkan</div><div class="tl-d">Asalnya 50 waktu sehari, dikurangkan kepada 5 waktu setelah cadangan Nabi Musa AS — dengan ganjaran 50 kali lipat.</div></div>
             </div>
           </div>
 
@@ -639,17 +650,6 @@
             </div>
           </div>
 
-          <div class="solat-pane" id="pane-peristiwa">
-            <h3 style="font-family:var(--font-display);font-size:28px;color:var(--emerald-900);font-weight:600;margin-bottom:6px">Peristiwa Pensyariatan Solat</h3>
-            <p style="color:var(--ink-soft);max-width:680px">Berbeza dengan kebanyakan ibadah, perintah solat 5 waktu diturunkan secara terus dari Allah kepada Nabi Muhammad SAW pada peristiwa Israk dan Mikraj.</p>
-            <div class="timeline">
-              <div class="tl-item"><div class="tl-year">TAHUN KE-10 KENABIAN</div><div class="tl-t">Tahun Kesedihan</div><div class="tl-d">Wafatnya Sayidatina Khadijah dan bapa saudara Abu Talib. Nabi SAW menerima ujian besar dalam dakwahnya di Mekah.</div></div>
-              <div class="tl-item"><div class="tl-year">27 REJAB</div><div class="tl-t">Israk — Perjalanan Malam</div><div class="tl-d">Nabi SAW dijalankan dari Masjidil Haram di Mekah ke Masjidil Aqsa di Baitul Maqdis dengan menaiki Buraq.</div></div>
-              <div class="tl-item"><div class="tl-year">MALAM YANG SAMA</div><div class="tl-t">Mikraj — Naik ke Sidratul Muntaha</div><div class="tl-d">Nabi SAW dinaikkan ke langit ke tujuh, bertemu para Nabi terdahulu, dan menerima perintah solat secara langsung.</div></div>
-              <div class="tl-item"><div class="tl-year">PEMBERIAN PERINTAH</div><div class="tl-t">Solat 5 Waktu Diwajibkan</div><div class="tl-d">Asalnya 50 waktu sehari, dikurangkan kepada 5 waktu setelah cadangan Nabi Musa AS — dengan ganjaran 50 kali lipat.</div></div>
-            </div>
-          </div>
-
           <div class="solat-pane" id="pane-waktu">
             <h3 style="font-family:var(--font-display);font-size:28px;color:var(--emerald-900);font-weight:600;margin-bottom:6px">Pengingat Waktu Solat</h3>
             <p style="color:var(--ink-soft);max-width:680px">Lima waktu solat fardhu yang diwajibkan setiap hari. Waktu semasa akan ditandakan secara automatik berdasarkan jam tempatan anda.</p>
@@ -806,14 +806,18 @@
           </div>
         </div>
         <div class="quiz-hero-actions">
-          <button class="quiz-platform" data-url="https://kahoot.com">
-            <div class="qp-ic kahoot">K!</div>
-            <div><div class="qp-t">Play Kahoot</div><div class="qp-s">Main bersama kelas anda</div></div>
+          <button class="quiz-platform" data-url="https://wayground.com/join?gc=36405425">
+            <div class="qp-ic quizizz">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor"/></svg>
+            </div>
+            <div><div class="qp-t">Play Quizizz</div><div class="qp-s">Main bersama kelas anda</div></div>
             <span class="qp-arrow">→</span>
           </button>
-          <button class="quiz-platform" data-url="https://quizizz.com">
-            <div class="qp-ic quizizz">Q</div>
-            <div><div class="qp-t">Answer Quizizz</div><div class="qp-s">Jawab pada kadar sendiri</div></div>
+          <button class="quiz-platform" data-url="https://www.educaplay.com/learning-resources/29169676-solat_mercu_kejayaan.html">
+            <div class="qp-ic educaplay">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r=".5" fill="currentColor"/></svg>
+            </div>
+            <div><div class="qp-t">EDUCAPLAY</div><div class="qp-s">Uji ilmu dengan kuiz interaktif</div></div>
             <span class="qp-arrow">→</span>
           </button>
           <button class="btn btn-gold" onclick="document.getElementById('quizPanel').scrollIntoView({behavior:'smooth'})">Start Quiz Dalam Laman →</button>
